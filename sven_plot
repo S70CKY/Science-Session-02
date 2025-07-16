@@ -99,30 +99,33 @@ node_borders = [node_colors[node] for node in nodes]
 fig = go.Figure(go.Sankey(
     arrangement="snap", 
     node=dict(
-        pad=50,  # spacing 
-        thickness=200,  # thickness of nodes 
-        line=dict(color=node_borders, width=7),  # border colors
-        color=[node_colors[node] for node in nodes],  # Node fill colors with opacity
-        label=["" for _ in nodes],  # Remove labels
+        pad=20,                # spacing between nodes
+        thickness=30,          # thickness of nodes 
+        line=dict(color=node_borders, width=4),  # border colors
+        color=[node_colors[node] for node in nodes],  # Node fill colors
+        label=nodes,           # Show node labels
     ),
     link=dict(
         source=source,
         target=target,
         value=value,
         color=link_colors,
-        hovertemplate=" ",  
+        hovertemplate=" ",     # No hover info
     )
 ))
 
 # Adjust the layout
 fig.update_layout(
-    # title="",
     autosize=False,
-    # DinA4 size 
-    width=2970,  
-    height=2100,  
+    width=2970,   # A4 landscape
+    height=2100,
     margin=dict(l=100, r=100, t=100, b=100),
-    font=dict(size=12)
+    font=dict(size=28)  # Large font for clarity
 )
 
 fig.show()
+
+# Optional: Print legend mapping node indices to names
+print("\nNode Index → Node Name Mapping:\n")
+for idx, name in enumerate(nodes):
+    print(f"{idx}: {name}")
