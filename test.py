@@ -54,7 +54,11 @@ fig = go.Figure(go.Parcats(
         dict(values=middles, label="Mid (ET/ND)"),
         dict(values=targets, label="Destination")
     ],
-    line=dict(color=color_vals),
+    line=dict(
+        color=color_vals,
+        shape='hspline'  # 👈 This enables curved lines!
+    ),
+   # line=dict(color=color_vals),
     hoveron='color',
     hoverinfo='count+probability',
     arrangement='freeform',
