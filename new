@@ -1,0 +1,43 @@
+    #for VAP
+    ("CILL", "ET", "VAP", 1),
+    ("CILL", "ND", "VAP", 3),
+    ("Trauma", "ET", "VAP", 1),
+    ("TraumaNN", "ND", "VAP", 1),
+    ("SCI", "ET", "VAP", 1),
+    ("TBI", "ET", "VAP", 1),
+    ("Stroke", "ET", "VAP", 1),
+    ("C19", "ET", "VAP", 1),
+    ("C19", "ND", "VAP", 1),
+ 
+    #for MVD
+    ("CILL", "ET", "MVD", 3),
+    ("CILL", "ND", "MVD", 1),
+    ("Trauma", "ET", "MVD", 1),
+    ("TraumaNN", "ND", "MVD", 1),
+    ("SCI", "ET", "MVD", 1),
+    ("TBI", "ET", "MVD", 1),
+    ("Stroke", "ET", "MVD", 1),
+    ("C19", "ND", "MVD", 3),
+   
+    #for STM
+    ("CILL", "ET", "STM", 2),
+    ("CILL", "ND", "STM", 3),
+    ("SCI", "ND", "STM", 1),
+    ("C19", "ND", "STM", 2),
+ 
+    #for ICULOS
+    ("CILL", "ET", "ICULOS", 4),
+    ("Trauma", "ET", "ICULOS", 1),
+    ("TraumaNN", "ND", "ICULOS", 1),
+    ("SCI", "ET", "ICULOS", 1),
+    ("TBI", "ET", "ICULOS", 1),
+    ("Stroke", "ET", "ICULOS", 1),
+    ("C19", "ND", "ICULOS", 2),
+ 
+    #for HLOS
+    ("CILL", "ND", "HLOS", 1),
+    ("TraumaNN", "ND", "HLOS", 1),
+    ("SCI", "ET", "HLOS", 1),
+    ("TBI", "ET", "HLOS", 1),
+    ("Stroke", "ET", "HLOS", 1),
+    ("C19", "ND", "HLOS", 1),
